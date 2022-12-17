@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+/* VARIABLES */
+/* :root{
+  --titillium-web: 
+  --color
+
+} */
+
+* {
+  font-family: "Belleza", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(
+    #9b7653,
+    #ac8b6e,
+    #bea289,
+    #ceb8a5,
+    #dfcfc3,
+    #efe7e0,
+    #ffffff
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  user-select: none;
+}
+
+.blink-me {
+  animation: blinker 2s ease-in infinite;
+}
+
+@keyframes blinker {
+  from {
+    color: #000000;
+  }
+  50% {
+    color: #ceb8a5;
+  }
+  to {
+    color: #000000;
+  }
+}
+
+main {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tiles-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  height: 25em;
+  min-width: 25em;
+}
+.blurred {
+  opacity: 20%;
+}
+
+li {
+  border: 1px solid black;
+  margin: 4px;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+li:hover {
+  background-color: #9b7653;
+}
+
+li:active {
+  opacity: 10%;
+}
+.display {
+  min-width: 100vw;
+}
+
+.player-next {
+  color: #efe7e0;
+
+  width: fit-content;
+  margin-left: 10em;
+}
+.PLAYER_X {
+  color: green;
+}
+.PLAYER_O {
+  color: blue;
+}
+
+.hide {
+  opacity: 100%;
+  display: none;
+}
+
+.reset-button {
+  outline-style: none;
+  background-color: #efe7e0;
+  border: none;
+  color: #967659;
+  font-weight: bold;
+  padding: 1em;
+  margin: 2em;
+}
+.reset-button:hover {
+  color: #efe7e0;
+  background-color: #967659;
+}
+.reset-button:active {
+  color: #dfcfc3;
+  background-color: #34291f;
+}
+
+@media (max-width: 767px) {
+  .tiles-wrapper {
+    height: 15em;
+    min-width: 15em;
+  }
+  .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .player-next {
+    margin: 0;
+  }
+  .reset-button {
+    padding: 0.4em;
+    font-weight: bold;
+    font-size: smaller;
+  }
+}
+
+/* https://encycolorpedia.com/9b7653 */
+/* https://bestfolios.medium.com/10-great-fonts-for-portfolio-design-2debfe2f1bb9 */
+
+/* https://emojipedia.org/ */
+/* https://unicode-table.com/en/ */
+/* https://blog.logrocket.com/using-em-vs-rem-css/ */

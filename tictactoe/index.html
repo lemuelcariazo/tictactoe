@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" type="module" defer></script>
+    <title>TIC-TAC-TOE</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="game-title" class="blink-me">🎮tic-tac-toe</h1>
+    </header>
+    <main>
+      <section class="display">
+        <h3 class="player-next">
+          Player <span id="player-display" class="PLAYER_X">X</span>'s next move
+        </h3>
+      </section>
+      <section>
+        <h1 class="announcer hide"></h1>
+      </section>
+      <section>
+        <ul class="tiles-wrapper">
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+          <li class="tile"></li>
+        </ul>
+      </section>
+      <section>
+        <button id="reset-button" class="reset-button">Restart</button>
+      </section>
+    </main>
+  </body>
+</html>
