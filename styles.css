@@ -135,15 +135,34 @@ li:active {
   background-color: #34291f;
 }
 
-@media (max-width: 767px) {
-  .tiles-wrapper {
-    height: 15em;
-    min-width: 15em;
-  }
+@media (max-width: 1023px) {
   .display {
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .tiles-wrapper {
+    height: 22em;
+    min-width: 22em;
+    margin-top: 4em;
+  }
+  .player-next {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .display {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tiles-wrapper {
+    height: 15em;
+    min-width: 15em;
+    margin-top: 7em;
   }
   .player-next {
     margin: 0;
