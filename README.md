@@ -6,4 +6,4 @@ please check him out, he is a good teacher.
 
 
 
-THIS IS MY DEPLOYED TICTACTOE SITE: https://xxductusxx.github.io/tictactoe.github.io/
+THIS IS MY DEPLOYED TICTACTOE SITE: https://lemuelcariazo.github.io/tictactoe/
